@@ -30,6 +30,7 @@ public class UserController {
 
     @GetMapping("user/{id}")
     public User findOne(@PathVariable Integer id) {
+		System.out.println("zs的笔记");
         return userService.findOne(id);
     }
 
